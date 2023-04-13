@@ -23,6 +23,11 @@ public class Client implements Serializable {
         this.comptes = comptes;
     }
 
+    public Client(String nom, String email) {
+        this.nom = nom;
+        this.email = email;
+    }
+
     public Long getCode() {
         return code;
     }

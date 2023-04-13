@@ -31,6 +31,13 @@ public abstract class Compte implements Serializable {
         this.operations = operations;
     }
 
+    public Compte(String codeCompte, Date dateCreation, double solde, Client client) {
+        this.codeCompte = codeCompte;
+        this.dateCreation = dateCreation;
+        this.solde = solde;
+        this.client = client;
+    }
+
     public String getCodeCompte() {
         return codeCompte;
     }
